@@ -6,6 +6,11 @@ const GithubReducer = (state, action) => {
         users: action.payload,
         loading: false,
       };
+    case "DELETE_USERS":
+      return {
+        ...state,
+        users: [],
+      };
     case "SET_LOADING":
       return {
         ...state,
