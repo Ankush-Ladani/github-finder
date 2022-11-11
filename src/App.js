@@ -25,7 +25,6 @@ function App() {
                 <Route path="/user/:login" element={<User />} />
               </Routes>
             </main>
-            {/* p1 -> 0.25rem and 4px */}
             <Footer />
           </div>
         </Router>
