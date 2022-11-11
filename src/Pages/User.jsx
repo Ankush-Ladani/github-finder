@@ -4,7 +4,6 @@ import Spinner from "../Components/layout/Spinner";
 import GithubContext from "../Context/Github/GithubContext";
 import { useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
-import Home from "./Home";
 import RepoList from "../Components/Repos/RepoList";
 function User() {
   const { getUser, user, loading, repos, getUserRepos } =
@@ -22,13 +21,11 @@ function User() {
     location,
     bio,
     blog,
-    twitter_username,
     login,
     html_url,
     followers,
     following,
     public_repos,
-    public_gists,
     hireable,
   } = user;
 
